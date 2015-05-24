@@ -1,0 +1,14 @@
+
+design notes
+=====================
+
+2GB = 2000000000 bytes
+
+priv = 256 bits = 32 bytes
+compressed_pub = 256 bits = 32 bytes
+bitcoin address = 25 bytes
+total = 89 bytes ~= 100 bytes
+
+2GB pool can fit 20000000 addresses, <20s worth of hashes at 1.5M hash/s
+
+
