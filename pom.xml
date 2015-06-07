@@ -43,6 +43,10 @@
                 <configuration>
                     <imageName>${project.artifactId}:${docker.image.tag}</imageName>
                     <baseImage>java</baseImage>
+                    <exposes>
+                        <expose>${docker.image.java.debug.port}</expose>
+                        <expose>8080</expose>
+                    </exposes>
                     <entryPoint>["java", "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=${docker.image.java.debug.port}", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <!-- copy the service's jar file from target into the root directory of the image -->
                     <resources>
