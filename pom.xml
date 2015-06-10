@@ -30,7 +30,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.2.10-SNAPSHOT</version>
+                <version>0.2.11</version>
                 <executions>
                     <execution>
                         <id>build-docker-image</id>
