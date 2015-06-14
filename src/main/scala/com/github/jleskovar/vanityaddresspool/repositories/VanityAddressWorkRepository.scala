@@ -11,7 +11,6 @@ import org.springframework.stereotype.Repository
  * Created by james on 31/05/15.
  */
 @Repository
-@RepositoryRestResource(exported = false)
 trait VanityAddressWorkRepository extends PagingAndSortingRepository[VanityAddressWorkItem, Long]
 
 
