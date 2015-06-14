@@ -61,16 +61,6 @@
         </plugins>
     </build>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.bitcoinj</groupId>
-                <artifactId>bitcoinj-core</artifactId>
-                <version>${bitcoinj-core.version}</version>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
